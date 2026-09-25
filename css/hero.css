@@ -6,9 +6,8 @@
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     image-set(
-      /* ZMIEŃ TE DWA PLIKI NA HERO Z MAKIETU: MOBILE 1x i 2x */
-      url("../images/hero-mobile.jpg") 1x,
-      url("../images/hero-mobile@2x.jpg") 2x
+      url("../images/hero-bg-mobile.jpg") 1x,
+      url("../images/hero-bg-mobile@2x.jpg") 2x
     );
   background-position: center;
   background-repeat: no-repeat;
@@ -54,9 +53,8 @@
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       image-set(
-        /* ZMIEŃ TE DWA PLIKI NA HERO Z MAKIETU: TABLET 1x i 2x */
-        url("../images/hero-tablet.jpg") 1x,
-        url("../images/hero-tablet@2x.jpg") 2x
+        url("../images/hero-bg-tablet.jpg") 1x,
+        url("../images/hero-bg-tablet@2x.jpg") 2x
       );
   }
 
@@ -75,9 +73,8 @@
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       image-set(
-        /* ZMIEŃ TE DWA PLIKI NA HERO Z MAKIETU: DESKTOP 1x i 2x */
-        url("../images/hero-desktop.jpg") 1x,
-        url("../images/hero-desktop@2x.jpg") 2x
+        url("../images/hero-bg-desktop.jpg") 1x,
+        url("../images/hero-bg-desktop@2x.jpg") 2x
       );
   }
 

@@ -28,6 +28,17 @@
           <span>Web</span>Studio
         </a>
 
+         <button
+          class="menu-open-button"
+          type="button"
+          aria-label="Open mobile menu"
+          aria-expanded="false"
+        >
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#MenuButton"></use>
+          </svg>
+        </button>
+
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -142,13 +153,12 @@
 
           <ul class="team-list">
             <li class="team-item">
-              <img
-                class="team-image"
-                src="./images/team-1.jpg"
-                alt="Mark Guerrero"
-                width="264"
-              />
-
+              <img class="team-image"
+                    src="./images/team-1.jpg"
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
+                    alt="Mark Guerrero"
+                    width="264"
+                  />
               <div class="team-content">
                 <h3 class="team-name">Mark Guerrero</h3>
                 <p class="team-position">Product Designer</p>
@@ -190,12 +200,12 @@
             </li>
 
             <li class="team-item">
-              <img
-                class="team-image"
-                src="./images/team-2.jpg"
-                alt="Tom Ford"
-                width="264"
-              />
+              <img class="team-image"
+                    src="./images/team-2.jpg"
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
+                    alt="Tom Ford"
+                    width="264"
+                  />
 
               <div class="team-content">
                 <h3 class="team-name">Tom Ford</h3>
@@ -238,12 +248,12 @@
             </li>
 
             <li class="team-item">
-              <img
-                class="team-image"
-                src="./images/team-3.jpg"
-                alt="Camila Garcia"
-                width="264"
-              />
+              <img class="team-image"
+                    src="./images/team-3.jpg"
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
+                    alt="Camila Garcia"
+                    width="264"
+                  />
 
               <div class="team-content">
                 <h3 class="team-name">Camila Garcia</h3>
@@ -286,12 +296,12 @@
             </li>
 
             <li class="team-item">
-              <img
-                class="team-image"
-                src="./images/team-4.jpg"
-                alt="Daniel Wilson"
-                width="264"
-              />
+              <img class="team-image"
+                    src="./images/team-4.jpg"
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
+                    alt="Daniel Wilson"
+                    width="264"
+                  />
 
               <div class="team-content">
                 <h3 class="team-name">Daniel Wilson</h3>
@@ -344,8 +354,9 @@
             <li class="portfolio-item">
               <a class="portfolio-link" href="./images/icons.svg">
                 <div class="portfolio-image">
-                  <img
+               <img
                     src="./images/portfolio-1.jpg"
+                srcset="./images/portfolio-1.jpg 1x, ./images/portfolio-1@2x.jpg 2x"
                     alt="Banking App"
                     width="360"
                   />
@@ -367,6 +378,7 @@
                 <div class="portfolio-image">
                   <img
                     src="./images/portfolio-2.jpg"
+                srcset="./images/portfolio-2.jpg 1x, ./images/portfolio-2@2x.jpg 2x"
                     alt="Cashless Payment"
                     width="360"
                   />
@@ -386,8 +398,9 @@
             <li class="portfolio-item">
               <a class="portfolio-link" href="./images/icons.svg">
                 <div class="portfolio-image">
-                  <img
+                 <img
                     src="./images/portfolio-3.jpg"
+                srcset="./images/portfolio-3.jpg 1x, ./images/portfolio-3@2x.jpg 2x"
                     alt="Meditation App"
                     width="360"
                   />
@@ -407,9 +420,10 @@
             <li class="portfolio-item">
               <a class="portfolio-link" href="./images/icons.svg">
                 <div class="portfolio-image">
-                  <img
+                 <img
                     src="./images/portfolio-4.jpg"
-                    alt="Taxi Service"
+                srcset="./images/portfolio-4.jpg 1x, ./images/portfolio-4@2x.jpg 2x"
+                    alt="Taxi Services"
                     width="360"
                   />
 
@@ -430,6 +444,7 @@
                 <div class="portfolio-image">
                   <img
                     src="./images/portfolio-5.jpg"
+                srcset="./images/portfolio-5.jpg 1x, ./images/portfolio-5@2x.jpg 2x"
                     alt="Screen Illustrations"
                     width="360"
                   />
@@ -449,8 +464,9 @@
             <li class="portfolio-item">
               <a class="portfolio-link" href="./images/icons.svg">
                 <div class="portfolio-image">
-                  <img
+                <img
                     src="./images/portfolio-6.jpg"
+                srcset="./images/portfolio-6.jpg 1x, ./images/portfolio-6@2x.jpg 2x"
                     alt="Online Courses"
                     width="360"
                   />
@@ -559,7 +575,76 @@
     </div>
   </div>
 </footer>
-<div class="backdrop is-open" id="modal">
+
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-menu-close" type="button" aria-label="Close mobile menu">
+    <svg width="8" height="8">
+      <use href="./images/icons.svg#close"></use>
+    </svg>
+  </button>
+
+  <nav class="mobile-menu-nav">
+    <ul class="mobile-menu-nav-list">
+      <li>
+        <a class="mobile-menu-nav-link current" href="#features">Features</a>
+      </li>
+      <li>
+        <a class="mobile-menu-nav-link" href="#team">Team</a>
+      </li>
+      <li>
+        <a class="mobile-menu-nav-link" href="#portfolio">Portfolio</a>
+      </li>
+    </ul>
+  </nav>
+
+  <address class="mobile-menu-contacts">
+    <ul class="mobile-menu-contacts-list">
+      <li>
+        <a class="mobile-menu-contact phone" href="tel:+110001111111">
+          +11 (000) 111-11-11
+        </a>
+      </li>
+      <li>
+        <a class="mobile-menu-contact" href="mailto:info@devstudio.com">
+          info@devstudio.com
+        </a>
+      </li>
+    </ul>
+  </address>
+
+  <ul class="mobile-menu-social-list">
+    <li>
+      <a class="mobile-menu-social-link" href="./images/icons.svg#instagram">
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#instagram"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a class="mobile-menu-social-link" href="./images/icons.svg#twitter">
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#twitter"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a class="mobile-menu-social-link" href="./images/icons.svg#facebook">
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#facebook"></use>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a class="mobile-menu-social-link" href="./images/icons.svg#linkedin">
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#linkedin"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="backdrop" id="modal">
   <div class="modal">
     <button class="modal-close" type="button">
       <svg width="8" height="8">

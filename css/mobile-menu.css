@@ -1,4 +1,8 @@
- .mobile-menu {
+ body.menu-open {
+  overflow: hidden;
+}
+
+.mobile-menu {
   position: fixed;
   inset: 0;
   z-index: 900;
