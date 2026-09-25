@@ -1,26 +1,27 @@
- .team {
+.team {
   background-color: #f4f4fd;
+}
+
+.team .section-title {
+  margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 72px;
+  gap: 24px;
 }
 
 .team-item {
-  width: 264px;
-  border-radius: 0 0 4px 4px;
-  background-color: #ffffff;
-  box-shadow:
-    0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16),
-    0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
+  width: calc((100% - 72px) / 4);
 
-.team-image {
-  width: 264px;
+  border-radius: 0 0 4px 4px;
+
+  background-color: #f4f4fd;
+
+  box-shadow:
+   0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+   0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+   0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-content {
@@ -29,6 +30,7 @@
 
 .team-name {
   margin-bottom: 8px;
+
   color: #2e2f42;
   font-size: 20px;
   line-height: 1.2;
@@ -39,6 +41,7 @@
 
 .team-position {
   margin-bottom: 8px;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -55,12 +58,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 40px;
   height: 40px;
+
   border-radius: 50%;
+
   color: #f4f4fd;
   background-color: #4d5ae5;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover,
@@ -70,21 +78,4 @@
 
 .team-social-link svg {
   fill: currentColor;
-}
-
-@media screen and (min-width: 768px) {
-  .team-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 24px;
-    row-gap: 64px;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .team-list {
-    flex-wrap: nowrap;
-    gap: 24px;
-  }
 }
