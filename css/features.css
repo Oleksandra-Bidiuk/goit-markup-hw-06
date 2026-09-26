@@ -1,4 +1,8 @@
- .features-list {
+.features {
+  padding: 96px 0;
+}
+
+.features-list {
   display: flex;
   flex-direction: column;
   gap: 72px;
@@ -8,23 +12,24 @@
   width: 100%;
 }
 
-.features-icon {
-  display: none;
-}
-
-.features-title {
+.features-item-title {
   margin-bottom: 8px;
   color: #2e2f42;
   font-size: 20px;
   line-height: 1.2;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.02em;
 }
 
-.features-text {
+.features-item-text {
+  color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.features-icon {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
