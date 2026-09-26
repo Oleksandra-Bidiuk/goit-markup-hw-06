@@ -100,12 +100,11 @@
   .contacts-list {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 12px;
   }
 
   .contacts-link {
     display: block;
-    padding: 4px 0;
     color: #434455;
     font-size: 12px;
     line-height: 1.17;

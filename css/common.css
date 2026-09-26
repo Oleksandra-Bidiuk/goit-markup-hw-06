@@ -48,8 +48,7 @@ button {
 }
 
 .section {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 0;
 }
 
 .section-title {
@@ -92,7 +91,6 @@ button {
   }
 
   .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
   }
 }
