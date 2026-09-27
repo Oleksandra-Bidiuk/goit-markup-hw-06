@@ -135,10 +135,11 @@
 
 @media screen and (min-width: 768px) {
   .footer-container {
+    max-width: 584px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     column-gap: 24px;
     row-gap: 72px;
   }
@@ -149,6 +150,8 @@
 
   .footer-subscribe {
     width: 453px;
+    align-items: flex-start;
+    margin: 0;
   }
 
   .subscribe-form {
@@ -176,15 +179,16 @@
   }
 
   .footer-info {
-    margin-right: 120px;
+    margin-right: 0;
   }
 
   .footer-social {
-    margin-right: 80px;
+    margin-right: 0;
+    margin-left: 120px;
   }
 
   .footer-subscribe {
     width: auto;
-    margin-left: 0;
+    margin-left: auto;
   }
 }
