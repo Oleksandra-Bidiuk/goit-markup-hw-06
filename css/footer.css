@@ -171,6 +171,7 @@
   }
 
   .footer-container {
+    max-width: 1158px;
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
@@ -190,5 +191,6 @@
   .footer-subscribe {
     width: auto;
     margin-left: auto;
+    max-width: none;
   }
 }
